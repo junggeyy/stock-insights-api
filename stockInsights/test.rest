@@ -1,0 +1,41 @@
+POST http://127.0.0.1:8000/user/login/
+Content-Type: application/json
+
+{"email": "testuser@gmail.com", "password": "testuser1"}
+
+###
+
+POST http://127.0.0.1:8000/user/signup/
+Content-Type: application/json
+
+{"first_name": "Test", "last_name": "User", "username": "testuser2", "email": "test2@user.com", "password": "testuser"}
+
+###
+
+GET http://127.0.0.1:8000/user/test_token/ 
+Content-Type: application/json
+Authorization: Token 60bcda1b8550d022caa8d8d204b22f43618b908e
+
+{}
+
+### 
+POST http://127.0.0.1:8000/user/logout/
+Content-Type: application/json
+Authorization: Token 24fa58567372db7ddfc37d2aed77dde67083b59f
+
+{}
+###
+
+GET http://127.0.0.1:8000/user/profile/
+Content-Type: application/json
+Authorization: Token 60bcda1b8550d022caa8d8d204b22f43618b908e
+
+{}
+###
+
+GET http://127.0.0.1:8000/stocks/AAPL/details/
+Content-Type: application/json
+Authorization: Token 60bcda1b8550d022caa8d8d204b22f43618b908e
+
+{}
+###
