@@ -1,6 +1,8 @@
 # Stock Insights REST API
 
 REST API built using Django REST Framework, offering authenticated stock data services and ML-based forecasting.
+<br>
+Android app built using the api: https://github.com/junggeyy/stock-insights-android
 
 ## Features
 
